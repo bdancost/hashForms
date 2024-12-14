@@ -23,49 +23,195 @@
 
       <div class="boxes">
         <div class="box1">
-          <h1><i class="bx bx-user-circle"></i> Meus Dados</h1>
-          <p>Confirme seus dados. Eles aparecerão em sua nota fiscal.</p>
+          <section class="meus-dados">
+            <h1><i class="bx bx-user-circle"></i> Meus Dados</h1>
+            <p>Confirme seus dados. Eles aparecerão em sua nota fiscal.</p>
 
-          <form action="#" id="formulario">
-            <fieldset>
-              <legend>Dados pessoais</legend>
-              <div class="form-group">
-                <label for="nome">Nome:</label>
+            <form action="#" id="formulario">
+              <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="form-group">
+                  <label for="nome">Nome:</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="cpf">CPF:</label>
+                  <input
+                    type="number"
+                    name="cpf"
+                    id="cpf"
+                    placeholder="Digite seu CPF"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="telefone">Telefone:</label>
+                  <input
+                    type="number"
+                    name="nome"
+                    id="telefone"
+                    placeholder="Digite seu Telefone"
+                    required
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Endereço</legend>
+                <div class="form-group">
+                  <label for="cep">CEP:</label>
+                  <input
+                    type="number"
+                    name="cep"
+                    id="cep"
+                    placeholder="Digite seu CEP"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="rua">Rua:</label>
+                  <input
+                    type="text"
+                    name="rua"
+                    id="rua"
+                    placeholder="Digite o nome da rua"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="numero">Número:</label>
+                  <input
+                    type="number"
+                    name="numero"
+                    id="numero"
+                    placeholder="Digite o número da Residencia"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="complemento">Complemento:</label>
+                  <input
+                    type="text"
+                    name="complemento"
+                    id="complemento"
+                    placeholder="Digite seu complemento"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="bairro">Bairro:</label>
+                  <input
+                    type="text"
+                    name="bairro"
+                    id="bairro"
+                    placeholder="Digite seu bairro"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="cidade">Cidade:</label>
+                  <input
+                    type="text"
+                    name="cidade"
+                    id="cidade"
+                    placeholder="Digite sua cidade"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="estado">Estado:</label>
+                  <input
+                    type="text"
+                    name="estado"
+                    id="estado"
+                    placeholder="Digite seu Estado"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <button type="submit">Avançar</button>
+            </form>
+          </section>
+        </div>
+        <div class="box2">
+          <section class="resumo">
+            <h2><i class="bx bx-receipt"></i> Resumo</h2>
+            <div class="resumo-item">
+              <p>Black Friday - Lote 01: R$ 1.200,00</p>
+              <p>Total: 12x R$ 100,00 ou R$ 1.200,00 à vista</p>
+            </div>
+
+            <div class="apply-discount">
+              <div class="aplly-discount-header">
+                <span>Aplicar cupom de desconto</span>
+                <i id="toogle-icon" class="bx bxs-chevron-down"></i>
+              </div>
+              <div class="apply-discount-body" id="apply-discount-body">
                 <input
                   type="text"
-                  name="nome"
-                  id="nome"
-                  placeholder="Digite seu nome"
-                  required
+                  id="discount-code"
+                  placeholder="Digite o código de desconto"
                 />
+                <button type="button">Aplicar</button>
+                <span style="display: block; margin-top: 10px; color: green"
+                  >Mensagem de desconto</span
+                >
+                <p id="total-price">Preço Total: R$ 1.200,00</p>
               </div>
+            </div>
 
-              <div class="form-group">
-                <label for="cpf">CPF:</label>
-                <input
-                  type="number"
-                  name="cpf"
-                  id="cpf"
-                  placeholder="Digite seu CPF"
-                  required
-                />
-              </div>
+            <div class="icons">
+              <i class="bx bxl-mastercard"></i>
+              <i class="bx bxl-visa"></i>
+              <i class="bx bxl-paypal"></i>
+              <i class="bx bxl-google"></i>
+              <i class="bx bx-barcode"></i>
+            </div>
 
-              <div class="form-group">
-                <label for="telefone">Telefone:</label>
-                <input
-                  type="number"
-                  name="nome"
-                  id="telefone"
-                  placeholder="Digite seu Telefone"
-                  required
+            <div class="garantia">
+              <div class="garantia_box">
+                <h3>Você tem 15 dias de garantia</h3>
+                <p>
+                  Experimente! Se não gostar ou ver que não é para você,
+                  devolvemos o seu dinheiro! Sem letras miúdas.
+                </p>
+
+                <p class="safe">
+                  <i class="bx bx-check-shield"></i>
+                  <strong>Suas informações estão seguras</strong>
+                </p>
+
+                <img
+                  src="/assets/safe.jpg"
+                  alt="Imagem carrinho de supermercado com logos de segurança"
+                  width="300px"
                 />
               </div>
-            </fieldset>
-          </form>
+            </div>
+          </section>
         </div>
-        <div class="box2">Resumo</div>
       </div>
+
+      <footer>
+        <p>
+          <a href="#">Termos de uso</a> |
+          <a href="#">Política de privacidade</a>
+        </p>
+      </footer>
     </main>
   </body>
 </html>
