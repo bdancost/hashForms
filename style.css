@@ -1,0 +1,61 @@
+:root {
+  --background: #30343f;
+  --primary: #1e2749;
+  --secondary: #273469;
+  --text-realce: #fb8500;
+  --text: #aaa;
+  --focus: #ff9f1c;
+  --safe: #45a049;
+  --input-background: #444;
+  --input-border: #555;
+  --button-background: #4caf50;
+  --white: #fff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  background-color: var(--primary);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.images {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.boxes {
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+}
+
+.box1,
+.box2 {
+  flex: 1;
+  background-color: var(--secondary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box2 {
+  max-width: 30%;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-realce);
+}
