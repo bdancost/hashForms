@@ -1,5 +1,9 @@
 "use strict";
 
+// Evento para o formulário
+const formulario = document.getElementById("formulario");
+formulario.addEventListener("submit", validarEGuardarFormulario);
+
 function isValidName(string) {
   for (let index = 0; index < string.length; index++) {
     let char = string[index];
@@ -126,8 +130,20 @@ function validarEGuardarFormulario(evento) {
     alert("O estado deve conter 2 letras maiúsculas.");
     return;
   }
-}
 
-// Evento para o formulário
-const formulario = document.getElementById("formulario");
-formulario.addEventListener("submit", validarEGuardarFormulario);
+  const dadosFormulario = {
+    nome,
+    cpf,
+    telefone,
+    cep,
+    rua,
+    numero,
+    bairro,
+    cidade,
+    estado,
+  };
+
+  localStorage.setItem("dadosFormulario", JSON.stringify(dadosFormulario));
+  formulario.reset();
+  alert("Dados salvos com sucesso!");
+}
