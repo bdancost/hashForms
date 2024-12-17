@@ -147,3 +147,10 @@ function validarEGuardarFormulario(evento) {
   formulario.reset();
   alert("Dados salvos com sucesso!");
 }
+
+const discountBtn = document.getElementById("discount-btn");
+discountBtn.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    submitForm();
+  }
+});
