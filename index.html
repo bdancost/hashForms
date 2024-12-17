@@ -158,7 +158,7 @@
             <div class="apply-discount">
               <div class="apply-discount-header" onclick="toggleDiscount()">
                 <span>Aplicar cupom de desconto</span>
-                <i id="toogle-icon" class="bx bxs-chevron-down"></i>
+                <i id="toggle-icon" class="bx bxs-chevron-down"></i>
               </div>
               <div class="apply-discount-body" id="apply-discount-body">
                 <input
@@ -166,8 +166,20 @@
                   id="discount-code"
                   placeholder="Digite o código de desconto"
                 />
-                <button id="discount-btn" type="button">Aplicar</button>
-                <span style="display: block; margin-top: 10px; color: green"
+                <button
+                  id="discount-btn"
+                  type="button"
+                  onclick="applyDiscount()"
+                >
+                  Aplicar
+                </button>
+                <span
+                  id="discount-message"
+                  style="
+                    display: block;
+                    margin-top: 10px;
+                    color: rgb(1, 178, 1);
+                  "
                   >Desconto de DESCONTO10 aplicado!</span
                 >
                 <p id="total-price">Preço Total: R$ 1.200,00</p>
